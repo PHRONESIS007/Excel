@@ -1,0 +1,16 @@
+ami-093bb31988192c398
+subnet-0451b860cfca97c47
+PHRONESIS
+sg-04e3bc9baa57649f2
+
+aws configure " to configure your machine before creating an instance"
+
+InstanceId": "i-05f10b5bf47102400"    "1st Machine"
+PublicIpAddress": "50.16.155.167
+
+aws ec2 describe-instances --instance-ids i-05f10b5bf47102400 "to describe insances"
+aws ec2 run-instances --image-id ami-093bb31988192c398 --instance-type t2.micro --count 1 --subnet-id subnet-0451b860cfca97c47 --key-name PHRONESIS --security-group-ids sg-04e3bc9baa57649f2 "to create your instance"
+
+InstanceId": "i-02234e79979974094"   "2nd Machine"
+PublicIpAddress": "3.91.76.114"
+
